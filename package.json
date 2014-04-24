@@ -1,0 +1,14 @@
+{
+
+  "name": "Heatmap.js",
+  "version": "0.0.1",
+  "description": "Fast, flexible, visually accurate heatmaps.",
+  "author": "David McClure",
+
+  "dependencies": {
+    "underscore": "^1.6.0",
+    "d3":         "^3.4.6",
+    "jquery":     "^2.1.0"
+  }
+
+}
