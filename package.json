@@ -5,9 +5,15 @@
   "description": "Fast, flexible, visually accurate heatmaps.",
   "author": "David McClure",
 
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-browserify": "^0.5.0",
+    "gulp-watch": "^0.6.2"
+  },
+
   "dependencies": {
-    "underscore": "^1.6.0",
     "d3": "^3.4.6",
+    "underscore": "^1.6.0",
     "jquery": "^2.1.0"
   }
 
