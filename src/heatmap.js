@@ -5,4 +5,7 @@ var $ = require('jquery');
 var _ = require('underscore');
 var d3 = require('d3');
 
-console.log('heatmap');
+var Heatmap = function(source, target) {
+  this.source = source;
+  this.target = target;
+};
