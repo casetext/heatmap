@@ -1,9 +1,11 @@
 {
 
-  "name": "Heatmap.js",
+  "name": "heatmap",
   "version": "0.0.1",
   "description": "Fast, flexible, visually accurate heatmaps.",
   "author": "David McClure",
+
+  "main": "heatmap.js",
 
   "devDependencies": {
     "gulp": "^3.6.2",

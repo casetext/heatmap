@@ -34,16 +34,18 @@ Heatmap.prototype = {
    * the source text should be represented in the heatmap group.
    */
   addGroup: function(name, selector) {
+    console.log('addGroup', name, selector);
     // TODO
   },
 
 
   /*
-   * Remove highlight group to the heatmap.
+   * Remove a highlight group from the heatmap.
    *
    * @param {String} name: The name of the group that should be removed.
    */
   removeGroup: function(name) {
+    console.log('removeGroup', name);
     // TODO
   }
 

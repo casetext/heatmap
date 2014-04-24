@@ -1,0 +1,14 @@
+{
+
+  "name": "heatmap-example-basic",
+  "version": "0.0.1",
+
+  "dependencies": {
+    "heatmap": "^0.0.1"
+  },
+
+  "scripts": {
+    "preinstall": "npm link ../../heatmap"
+  }
+
+}
