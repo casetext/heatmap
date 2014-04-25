@@ -6,11 +6,15 @@ var browserify = require('gulp-browserify');
 var connect = require('gulp-connect');
 
 gulp.task('scripts', function() {
-  gulp.src('heatmap.js')
+  gulp.src('lib/heatmap.js')
     .pipe(browserify({ standalone: 'Heatmap' }))
     .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('connect', function() {
   connect.server();
+});
+
+gulp.task('watch', function() {
+  gulp.watch(['lib/**/*.js'], ['scripts'])
 });
