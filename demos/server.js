@@ -14,7 +14,7 @@ app.set('views', __dirname);
 // Browserify the Javascripts.
 app.use('/js', browserify(__dirname));
 
-// Route to the demo templates.
+// Route to the index.jade templates.
 app.get('/demos/:demo', function(req, res) {
   res.render(req.params.demo + '/index');
 });

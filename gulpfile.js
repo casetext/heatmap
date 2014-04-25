@@ -3,18 +3,15 @@
 
 var gulp = require('gulp');
 var browserify = require('gulp-browserify');
-var connect = require('gulp-connect');
 
+// Browserify the library.
 gulp.task('scripts', function() {
   gulp.src('lib/heatmap.js')
     .pipe(browserify({ standalone: 'Heatmap' }))
     .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('connect', function() {
-  connect.server();
-});
-
+// Recompile on file change.
 gulp.task('watch', function() {
   gulp.watch(['lib/**/*.js'], ['scripts'])
 });
