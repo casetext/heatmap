@@ -1,0 +1,8 @@
+
+/* vim: set expandtab tabstop=2 shiftwidth=2 softtabstop=2 cc=80: */
+
+var $ = require('jquery');
+
+$(function() {
+  console.log('demo');
+});
