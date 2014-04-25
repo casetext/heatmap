@@ -8,19 +8,19 @@ var express = require('express');
 var app = express();
 
 // Use Jade for templates.
-app.set('views', path.join(__dirname, 'demos'));
 app.set('view engine', 'jade');
+app.set('views', __dirname);
 
 // Browserify the Javascripts.
-app.use('/js', browserify(path.join(__dirname, 'demos')));
-
-// Listen on port 3000, by default.
-app.set('port', process.env.PORT || 3000);
+app.use('/js', browserify(__dirname));
 
 // Route to the demo templates.
 app.get('/demos/:demo', function(req, res) {
   res.render(req.params.demo + '/index');
 });
+
+// Listen on port 3000, by default.
+app.set('port', process.env.PORT || 3000);
 
 // Spin up the server.
 var server = app.listen(app.get('port'), function() {

@@ -8,7 +8,7 @@
   "main": "dist/heatmap.js",
 
   "scripts": {
-    "start": "node demos.js"
+    "start": "node demos/server.js"
   },
 
   "devDependencies": {
