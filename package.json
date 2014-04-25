@@ -2,21 +2,26 @@
 
   "name": "heatmap",
   "version": "0.0.1",
-  "description": "Fast, flexible, visually accurate heatmaps.",
+  "description": "Fast, flexible, hi-fi heatmaps for documents.",
   "author": "David McClure",
 
-  "main": "heatmap.js",
+  "main": "dist/heatmap.js",
+
+  "scripts": {
+    "start": "node demos.js"
+  },
 
   "devDependencies": {
-    "gulp": "^3.6.2",
-    "gulp-browserify": "^0.5.0",
-    "gulp-connect": "^2.0.5"
+    "gulp":             ">= 3.6.2",
+    "gulp-browserify":  ">= 0.5.0",
+    "gulp-connect":     ">= 2.0.5",
+    "express":          ">= 4.1.0"
   },
 
   "dependencies": {
-    "d3": "^3.4.6",
-    "underscore": "^1.6.0",
-    "jquery": "^2.1.0"
+    "d3":               ">= 3.4.6",
+    "underscore":       ">= 1.6.0",
+    "jquery":           ">= 2.1.0"
   }
 
 }
