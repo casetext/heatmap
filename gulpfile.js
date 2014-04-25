@@ -3,10 +3,14 @@
 
 var gulp = require('gulp');
 var browserify = require('gulp-browserify');
-var watch = require('gulp-watch');
+var connect = require('gulp-connect');
 
 gulp.task('scripts', function() {
   gulp.src('heatmap.js')
     .pipe(browserify({ standalone: 'Heatmap' }))
     .pipe(gulp.dest('dist/'));
+});
+
+gulp.task('connect', function() {
+  connect.server();
 });
