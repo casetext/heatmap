@@ -9,7 +9,7 @@ var app = express();
 
 // Use Jade for templates.
 app.set('view engine', 'jade');
-app.set('views', __dirname);
+app.set('views', path.join(__dirname, 'demos'));
 
 // Browserify the Javascripts.
 app.use('/js', browserify(__dirname));

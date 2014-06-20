@@ -7,7 +7,7 @@ var _ = _dereq_('underscore');
 var d3 = _dereq_('d3');
 
 
-/*
+/**
  * Construct a new heatmap.
  *
  * @param {String} source: A CSS selector for the container element that is
@@ -25,7 +25,7 @@ var Heatmap = function(source, target) {
 Heatmap.prototype = {
 
 
-  /*
+  /**
    * Add a new highlight group to the heatmap.
    *
    * @param {String} name: A name for the group. Later on, this can be used to
@@ -39,7 +39,7 @@ Heatmap.prototype = {
   },
 
 
-  /*
+  /**
    * Remove a highlight group from the heatmap.
    *
    * @param {String} name: The name of the group that should be removed.
@@ -50,6 +50,7 @@ Heatmap.prototype = {
 
 
 };
+
 
 module.exports = Heatmap;
 
