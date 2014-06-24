@@ -7,8 +7,8 @@ module.exports = {
   },
 
   heatmap: {
-    files: ['lib/**/*', 'dev/**/*'],
-    tasks: ['browserify']
+    files: ['lib/*', 'demo/*'],
+    tasks: ['watchify']
   }
 
 };
