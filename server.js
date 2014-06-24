@@ -9,7 +9,7 @@ var app = express();
 
 // Use Jade for templates.
 app.set('view engine', 'jade');
-app.set('views', path.join(__dirname, 'demos'));
+app.set('views', path.join(__dirname, 'dev'));
 
 // Browserify the Javascripts.
 app.use('/js', browserify(__dirname));
@@ -24,5 +24,5 @@ app.set('port', process.env.PORT || 3000);
 
 // Spin up the server.
 var server = app.listen(app.get('port'), function() {
-  console.log('Sweet demos on port %d', server.address().port);
+  console.log('Demos on %d', server.address().port);
 });
