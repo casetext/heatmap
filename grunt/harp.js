@@ -4,7 +4,7 @@ module.exports = {
 
   demos: {
     server: true,
-    source: '.'
+    source: 'dev/'
   }
 
 };

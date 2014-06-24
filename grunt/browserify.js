@@ -2,7 +2,7 @@
 
 module.exports = {
 
-  dist: {
+  heatmap: {
     src: 'lib/heatmap.js',
     dest: 'dist/heatmap.js'
   }
