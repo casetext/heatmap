@@ -24,13 +24,13 @@ gulp.task('watch', function() {
 
   // Spin up an Express server.
   app.set('port', process.env.PORT || 3000);
+  app.use('/js', expressBrowserify(path.join(__dirname, 'dev')));
   app.set('views', path.join(__dirname, 'dev'));
-  app.use('/js', expressBrowserify(__dirname));
   app.set('view engine', 'jade');
 
   // Route to the index.jade templates.
-  app.get('/dev/:demo', function(req, res) {
-    res.render(req.params.demo + '/index');
+  app.get('/dev/:env', function(req, res) {
+    res.render(req.params.env + '/index');
   });
 
   // Listen on 3000.

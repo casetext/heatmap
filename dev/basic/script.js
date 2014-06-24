@@ -1,9 +1,4 @@
 
 
-var Heatmap = require('../../lib/heatmap.js');
-var $ = require('jquery');
-
-
-$(function() {
-  console.log('demo');
-});
+var Heatmap = require('../../dist/heatmap.js');
+console.log(Heatmap);
