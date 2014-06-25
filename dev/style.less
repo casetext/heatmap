@@ -8,10 +8,20 @@ body {
 }
 
 #source {
+
   width: 50%;
   left: 200px;
   margin: 0 auto;
   padding: 1em;
+
+  [data-neatline-slug] {
+
+    &.highlighted {
+      background: yellow;
+    }
+
+  }
+
 }
 
 #target {
@@ -22,7 +32,13 @@ body {
   top: 0;
 
   .slugs {
+
     fill: gray;
+
+    &.highlighted {
+      fill: yellow;
+    }
+
   }
 
 }
