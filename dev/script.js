@@ -1,7 +1,7 @@
 
 
 var Heatmap = require('../lib/heatmap');
-var HeatmapGroups = require('../lib/plugins/groups');
+var WrappedGroups = require('../lib/plugins/wrappedGroups');
 var $ = require('jquery');
 
 
@@ -15,7 +15,7 @@ $(function() {
   position();
 
   var heatmap = new Heatmap('#source', '#target');
-  var groups = new HeatmapGroups(heatmap);
+  var groups = new WrappedGroups(heatmap);
 
   groups.addGroup('slugs', '[data-neatline-slug]');
 
