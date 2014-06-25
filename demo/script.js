@@ -1,7 +1,7 @@
 
 
-var Heatmap = require('./heatmap');
-var HeatmapGroups = require('./plugins/groups');
+var Heatmap = require('../lib/heatmap');
+var HeatmapGroups = require('../lib/plugins/groups');
 var $ = require('jquery');
 
 
