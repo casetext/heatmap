@@ -3,8 +3,8 @@
 module.exports = {
 
   demo: {
-    src: './demo/script.js',
-    dest: './demo/dist/script.js'
+    src: './dev/script.js',
+    dest: './dev/dist/script.js'
   }
 
 };
