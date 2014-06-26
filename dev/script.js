@@ -1,7 +1,7 @@
 
 
 var Heatmap = require('../lib/heatmap');
-var HeatmapGroups = require('../lib/plugins/groups');
+var HeatmapSpans = require('../lib/plugins/spans');
 var $ = require('jquery');
 
 
@@ -15,9 +15,9 @@ $(function() {
   position();
 
   var heatmap = new Heatmap('#source', '#target');
-  var groups = new HeatmapGroups(heatmap);
+  var spans = new HeatmapSpans(heatmap);
 
-  groups.addGroup('slugs', '[data-neatline-slug]');
+  spans.addGroup('slugs', '[data-neatline-slug]');
 
   $(window).resize(function() {
     heatmap.updateSize();
