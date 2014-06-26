@@ -2,7 +2,7 @@
 
 module.exports = {
 
-  demos: {
+  demo: {
     server: true,
     source: '.'
   }
