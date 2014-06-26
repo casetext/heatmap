@@ -17,11 +17,11 @@ $(function() {
 
   var heatmap = new Heatmap('#source', '#target');
 
-  var spans = new SpanGroup(heatmap);
-  spans.addGroup('slugs', '[data-neatline-slug]');
-
   var segments = new SegmentGroup(heatmap);
   segments.addGroup('pages', 'span[page]');
+
+  var spans = new SpanGroup(heatmap);
+  spans.addGroup('slugs', '[data-neatline-slug]');
 
   $(window).resize(function() {
     heatmap.updateSize();
