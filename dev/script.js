@@ -1,8 +1,8 @@
 
 
 var Heatmap = require('../lib/heatmap');
-var HeatmapSegments = require('../lib/plugins/segments');
-var HeatmapSpans = require('../lib/plugins/spans');
+var SegmentGroup = require('../lib/segment-group');
+var SpanGroup = require('../lib/span-group');
 var $ = require('jquery');
 
 
@@ -17,10 +17,10 @@ $(function() {
 
   var heatmap = new Heatmap('#source', '#target');
 
-  var spans = new HeatmapSpans(heatmap);
+  var spans = new SpanGroup(heatmap);
   spans.addGroup('slugs', '[data-neatline-slug]');
 
-  var segments = new HeatmapSegments(heatmap);
+  var segments = new SegmentGroup(heatmap);
   segments.addGroup('pages', 'span[page]');
 
   $(window).resize(function() {
