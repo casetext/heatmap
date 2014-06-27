@@ -2,7 +2,6 @@
 
 var Heatmap = require('../lib/heatmap');
 var Window = require('../lib/window');
-var CursorBar = require('../lib/cursor-bar');
 var SegmentGroup = require('../lib/segment-group');
 var SpanGroup = require('../lib/span-group');
 var $ = require('jquery');
@@ -26,7 +25,6 @@ $(function() {
   spans.addGroup('slugs', '[data-neatline-slug]');
 
   new Window(heatmap);
-  new CursorBar(heatmap);
 
   $(window).resize(function() {
     heatmap.updateSize();
